@@ -130,10 +130,10 @@ const Login = () => {
 
                     {/* RIGHT */}
                     <div className="w-full lg:w-6/12 p-6">
-                        <h1 className="font-black text-4xl uppercase">JOIN THE CLUB. GET REWARDED.</h1>
+                        <h1 className="font-black text-4xl uppercase">JOIN THE CLUB</h1>
          
                         <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Earn access to shop limited edition products</p>
-                        <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Level up for exclusive access to sport, yoga and music events</p>
+                       
                         <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Receive our best special offers </p>
                         <Link href="/account-login" passHref={true}>
                             <button className="cursor-pointer bg-black text-white py-3 px-6 mb-4 flex items-center uppercase font-bold mt-4">Join the club &nbsp; <HiArrowNarrowRight /></button>

@@ -87,12 +87,12 @@ const Account = () => {
 
                         <div className='flex flex-col lg:flex-row bg-gray-400 mt-20'>
                             <div className='p-6 w-full lg:w-7/12'>
-                                <h1 className="font-medium text-white text-4xl uppercase">YOU ARE A CHALLENGER</h1>
-                                <p className='text-xs text-white my-3'>Its go time. You now have access to all Challenger level rewards. Explore your rewards and start earning points to unlock the next level.</p>
-                                <button className="cursor-pointer bg-black text-white py-3 px-6 mb-4 flex items-center uppercase font-bold mt-4">View Your Rewards &nbsp; <HiArrowNarrowRight /></button>
+                                <h1 className="font-large text-white text-5xl uppercase">WE DESIGN</h1>
+                                <p className='text-5xl text-white my-3'>ITS GO TIME.SHOP NOW and SAVE A LOT</p>
+                                {/* <button className="cursor-pointer bg-black text-white py-3 px-6 mb-4 flex items-center uppercase font-bold mt-4">View Your Rewards &nbsp; <HiArrowNarrowRight /></button> */}
                             </div>
                             <div className='w-full lg:w-5/12'>
-                                <img src='https://www.adidas.co.in/on/demandware.static/-/Sites-adidas-IN-Library/default/dwe8130ce7/GlassCreatorsClub/lvl1.png' alt='' />
+                                <img src='https://res.cloudinary.com/dcm3xxrwh/image/upload/v1649689857/House_Calls_Brooklyn_Zames_Williams_living_room_2_Matthew_Williams_xroz6j.jpg' alt='' />
                             </div>
                         </div>
 
@@ -117,7 +117,6 @@ const Account = () => {
                         <p className="underline mt-3 cursor-pointer">Delivery</p>
                         <p className="underline mt-3 cursor-pointer">Return & Refund</p>
                         <p className="underline mt-3 cursor-pointer">Ordering & Payment</p>
-                        <p className="underline mt-3 cursor-pointer">Promotions & Vouchers</p>
                         <p className="underline mt-3 cursor-pointer">Company Information</p>
                     </div>
                 </div>

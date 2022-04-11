@@ -27,7 +27,7 @@ const GENDER_LIST = [
     },
     {
         id: 5,
-        name: 'KICTHEN',
+        name: 'KITCHEN',
         image: 'https://res.cloudinary.com/dcm3xxrwh/image/upload/v1648390932/adobestock-117682502-1643649364.jpeg_v3udpf.jpg',
         link: 'KITCHEN'
     },
