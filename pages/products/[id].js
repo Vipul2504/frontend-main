@@ -10,18 +10,18 @@ import toast from 'react-hot-toast'
 const ProductDetail = ({ product }) => {
 
     const dispatch = useDispatch()
-    const [shoeSize, setShoeSize] = useState()
+    // const [shoeSize, setShoeSize] = useState()
     const [qty, setQty] = useState(1)
 
     const handleAddToCart = () => {
 
-        if (!shoeSize) return toast.error('Please Select a size')
+        // if (!shoeSize) return toast.error('Please Select a size')
 
         const payload = {
             id: product._id + Math.floor(Math.random() * 1000),
             product,
             qty: +qty,
-            size: shoeSize,
+            // size: shoeSize,
         }
         dispatch(addProductData(payload))
         toast.success('Added to cart successfully')
@@ -45,13 +45,13 @@ const ProductDetail = ({ product }) => {
                     <div className="p-4 w-full lg:w-1/2">
                         <div className='flex justify-between items-center mt-2 md:mt-32 lg:mt-0
                                 '>
-                            <p className='uppercase font-bold mb-2 text-gray-400'>{product.category}</p>
+                            <p className='uppercase font-bold mb-2 text-gray-400'>{product.country}</p>
                             <div className='flex items-center justify-center'>
                                 <h1 className="font-bold text-xs ml-3 underline">{product.numOfReviews}</h1>
                             </div>
                         </div>
                         <h1 className="font-bold italic tracking-tighter text-3xl uppercase">{product.name}</h1>
-                        <p className="my-2">Join the Furnito Creators Club membership program:</p>
+                        <p className="my-2">Join the Furnito and avail more discount</p>
                         <div className="mt-2 mb-8">
                             <h1 className="my-1 font-bold text-2xl text-red-700">₹{commaNumber(product.salePrice)} <span className='text-xs text-gray-400'>[ {commaNumber(((product.salePrice / product.price) * 100).toFixed(0))}% discount]</span></h1>
                             {
@@ -61,7 +61,7 @@ const ProductDetail = ({ product }) => {
                         </div>
 
                         <div className="my-8">
-                            <div className="w-full flex justify-between">
+                            {/* <div className="w-full flex justify-between">
                                 <h1 className="font-bold">SIZE</h1>
                                 <h1 className="font-bold flex items-center cursor-pointer">SIZE CHART</h1>
                             </div>
@@ -69,7 +69,7 @@ const ProductDetail = ({ product }) => {
                                 {
                                     [7, 8, 9, 10, 11].map((e, index) => <div className={`border-2 cursor-pointer hover:border-black w-20 py-1 flex justify-center items-center ${shoeSize === e ? "border-black" : ""}`} key={index} onClick={() => setShoeSize(e)} >{e}</div>)
                                 }
-                            </div>
+                            </div>*/}
                             <h1 className="font-bold my-4 uppercase">Quantity</h1>
                             <div className="flex flex-col items-start justify-between my-2">
                                 <select defaultValue="1" size="large" className="border-2 bg-transparent w-full cursor-pointer active:text-white py-4 px-6 " onChange={(e) => setQty(e.target.value)}>
@@ -80,7 +80,7 @@ const ProductDetail = ({ product }) => {
                                     <option value={5}>5</option>
                                     <option value={6}>6</option>
                                 </select>
-                            </div>
+                            </div> 
                             <button onClick={handleAddToCart} className="cursor-pointer bg-black text-white py-4 px-6 w-full flex items-center uppercase">Add to Bag &nbsp; <HiArrowNarrowRight /></button>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ const ProductDetail = ({ product }) => {
                                 <img src={product?.image} alt='' className='h-96 w-full object-cover' />
                             </div>
                             <div className="p-4 w-full lg:w-1/2">
-                                <h1 className="font-bold text-base uppercase">{product.category}</h1>
+                                <h1 className="font-bold text-base uppercase">{product.country}</h1>
                                 <h1 className="font-bold text-3xl italic uppercase">{product.name}</h1>
                                 <p className="text-base mt-2">{product.desc}</p>
                             </div>
@@ -115,9 +115,9 @@ const ProductDetail = ({ product }) => {
                             <div className="p-4 w-full lg:w-1/2">
                                 <ul className='list-disc'>
                                     <li className="text-base my-2"><span className='font-bold'>Importer: </span>{product.importer}</li>
-                                    <li className="text-base my-2"><span className='font-bold'>Gender: </span>{product.gender}</li>
+                                    {/* <li className="text-base my-2"><span className='font-bold'>Gender: </span>{product.gender}</li> */}
                                     <li className="text-base my-2"><span className='font-bold'>Country: </span>{product.country}</li>
-                                    <li className="text-base my-2"><span className='font-bold'>Category: </span>{product.category}</li>
+                                    {/* <li className="text-base my-2"><span className='font-bold'>Category: </span>{product.category}</li> */}
                                 </ul>
                             </div>
                         </div>

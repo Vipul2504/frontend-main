@@ -24,7 +24,7 @@ const ProductCard = ({ data }) => {
                 </div>
                 <div className="p-4">
                     <h1 className="uppercase font-normal text-sm">{name}</h1>
-                    <p className="capitalize text-xs text-gray-400">{category}</p>
+                    {/* <p className="capitalize text-xs text-gray-400">{category}</p> */}
                 </div>
             </div>
         </Link>

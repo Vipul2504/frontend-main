@@ -17,7 +17,7 @@ const OrderComplete = () => {
     return (
         <div className="flex flex-col items-center justify-center">
             <Head>
-                <title>Order - adidas Online Store</title>
+                <title>Order - Furnito Online Store</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

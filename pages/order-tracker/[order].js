@@ -42,7 +42,7 @@ const OrderTracker = () => {
     return (
         <div className="flex flex-col items-center justify-center">
             <Head>
-                <title>Account - adidas Online Store</title>
+                <title>Account - Furnito Online Store</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

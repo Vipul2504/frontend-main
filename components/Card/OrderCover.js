@@ -14,7 +14,7 @@ const OrderCover = ({ data }) => {
                 </div>
 
                 <div className="p-4 w-4/6">
-                    <h1 className='text-xs uppercase'>{product.category}</h1>
+                    {/* <h1 className='text-xs uppercase'>{product.category}</h1> */}
                     <h1 className="font-bold text-sm">{product.name}</h1>
                     <div className="flex items-center text-xs">
                         <h1>Size: {size}</h1>

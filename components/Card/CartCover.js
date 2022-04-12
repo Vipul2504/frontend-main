@@ -34,7 +34,7 @@ const CartCover = ({ data }) => {
 
                 <div className="w-4/6 p-4 px-8 pr-16">
                     <div className="flex justify-between lg:items-center flex-col lg:flex-row">
-                        <h1 className="font-medium text-base uppercase">{product.category}</h1>
+                        {/* <h1 className="font-medium text-base uppercase">{product.category}</h1> */}
                         <div className="flex items-center">
                             {
                                 product.salePrice === product.price ? "" : <h1 className="font-light line-through text-sm">₹{commaNumber(product.price * qty)}</h1>

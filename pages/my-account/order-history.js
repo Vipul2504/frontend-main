@@ -14,7 +14,7 @@ const Account = () => {
     return (
         <div className="flex flex-col items-center justify-center">
             <Head>
-                <title>Account - adidas Online Store</title>
+                <title>Account - Furnito Online Store</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -70,7 +70,6 @@ const Account = () => {
                         <p className="underline mt-3 cursor-pointer">Delivery</p>
                         <p className="underline mt-3 cursor-pointer">Return & Refund</p>
                         <p className="underline mt-3 cursor-pointer">Ordering & Payment</p>
-                        <p className="underline mt-3 cursor-pointer">Promotions & Vouchers</p>
                         <p className="underline mt-3 cursor-pointer">Company Information</p>
                     </div>
                 </div>
