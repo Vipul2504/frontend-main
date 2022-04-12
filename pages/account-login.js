@@ -42,7 +42,7 @@ const Login = () => {
                                 </div>
                                 <div className="ml-3 flex-1">
                                     <p className="text-sm font-medium text-gray-900">
-                                        Furnito
+                                        Adidas
                                     </p>
                                     <p className="mt-1 text-sm text-gray-500">
                                         Your OTP for login is <span className='text-xl text-red-500 font-black'>{data.otp}</span>!
@@ -89,7 +89,7 @@ const Login = () => {
     return (
         <div className="flex flex-col items-center justify-center">
             <Head>
-                <title>Furnito Online Shop</title>
+                <title>adidas Online Shop | adidas IN</title>
                 <link rel="icon" href="/logo.svg" />
             </Head>
 
@@ -131,10 +131,12 @@ const Login = () => {
                     {/* RIGHT */}
                     <div className="w-full lg:w-6/12 p-6">
                         <h1 className="font-black text-4xl uppercase">JOIN THE CLUB. GET REWARDED.</h1>
-         
+                        <p className="my-3">Join the adidas Creators Club membership program:</p>
+                        <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Get immediate access to all Challenger level rewards</p>
                         <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Earn access to shop limited edition products</p>
                         <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Level up for exclusive access to sport, yoga and music events</p>
-                        <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Receive our best special offers </p>
+                        <p className="mt-1 cursor-pointer flex items-center"><BsCheck2 /> &nbsp; &nbsp;Receive our best special offers and promotions</p>
+                        <p className="my-3">Join now and start earning points to access new levels and rewards. Its time to unlock the best of adidas.</p>
                         <Link href="/account-login" passHref={true}>
                             <button className="cursor-pointer bg-black text-white py-3 px-6 mb-4 flex items-center uppercase font-bold mt-4">Join the club &nbsp; <HiArrowNarrowRight /></button>
                         </Link>

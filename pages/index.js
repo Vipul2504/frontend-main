@@ -27,7 +27,7 @@ export default function Home({ products }) {
 
         <div className="w-11/12 lg:w-9/12 my-10">
 
-          <h1 className="font-bold text-3xl italic tracking-tighter uppercase mt-16 text-left">WHO ARE YOU SHOPPING FOR?</h1>
+          <h1 className="font-bold text-3xl italic tracking-tighter uppercase mt-16 text-left">What are you looking for?</h1>
           <div className="grid grid-cols-3 mt-6">
             {
               GENDER_LIST.map((e) => <GenderCard key={e.id} name={e.name} image={e.image} link={e.link} />)
